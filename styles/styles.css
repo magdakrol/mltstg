@@ -1,3 +1,7 @@
+#o-nas, #news, #oferta, #galeria, #scena, #kontakt {
+  margin: 150px 0;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1300px;
@@ -5,6 +9,7 @@
   position: relative;
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  position: relative;
 }
 
 .clear {
@@ -156,6 +161,7 @@ section {
           flex: 0 0 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin: 0px 0 100px;
 }
 
 #o-nas .about-text p {
@@ -164,7 +170,12 @@ section {
           flex: 0 0 40%;
 }
 
+.about-gallery {
+  overflow: hidden;
+}
+
 .images {
+  position: fixed;
   margin: 85px 0;
   font-size: 0;
   display: -ms-flexbox;
@@ -190,6 +201,54 @@ section {
   height: auto;
 }
 
+.offer-button:hover {
+  height: 180px;
+  -webkit-transition: height 0.15s ease-out;
+  transition: height 0.15s ease-out;
+}
+
+.offer-button {
+  height: 48px;
+  -webkit-transition: height 0.15s ease-out;
+  transition: height 0.15s ease-out;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  right: 0;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+  background-color: rgba(255, 188, 0, 0.9);
+}
+
+.offer-button a {
+  color: white;
+  text-align: right;
+  display: block;
+}
+
+.offer-button h3 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.offer-button span {
+  border-top: 1px solid white;
+  color: white;
+  padding-top: 3px;
+  padding: 10px;
+}
+
 .offer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -198,62 +257,13 @@ section {
   margin: 0 auto;
 }
 
-.offer-button::after {
-  font-weight: 300;
-  content: attr(data-text);
-  position: absolute;
-  overflow: hidden;
-  background-color: #ffbc00;
-  opacity: 0.4;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  color: #F9EAC7;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1.2rem;
-  letter-spacing: 1.2px;
-  padding: 15px;
-  opacity: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.offer-button:hover::after {
-  opacity: 1;
-}
-
 .offer1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 47%;
           flex: 0 0 47%;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: block;
-}
-
-.offer-button {
-  position: absolute;
-  text-align: center;
-  bottom: 100px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.offer-button a {
-  background-color: #ffbc00;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 15px 10px;
-  position: relative;
-  text-transform: uppercase;
 }
 
 .jumbo {
@@ -287,17 +297,128 @@ section {
   padding-bottom: 30px;
 }
 
-.jumbo span {
+.jumbo p {
   padding: 25px 0 10px;
   font-weight: 300;
   font-size: 22px;
+  width: 100%;
 }
 
-.jumbo p {
+.jumbo span {
   text-transform: uppercase;
   color: #9a9a9a;
   font-weight: 500;
   font-size: 25px;
+}
+
+.main-article {
+  width: 100%;
+  position: absolute;
+  bottom: -85px;
+  background-color: rgba(255, 188, 0, 0.9);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-article h3 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.main-article p {
+  color: white;
+  font-size: 16px;
+  padding-top: 20px;
+  border-top: 1px white solid;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.main-article a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 5px;
+}
+
+.slider {
+  margin-top: 125px;
+  height: 350px;
+}
+
+.slick-slide {
+  width: 500px;
+}
+
+div.slick-list.draggable {
+  height: 100%;
+}
+
+.article {
+  width: 350px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.article .article-content {
+  background-color: rgba(255, 188, 0, 0.8);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: auto;
+  top: 188px;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+.article .article-content h4 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+}
+
+.article .article-content p {
+  padding: 15px 5px;
+}
+
+.article .article-content a {
+  text-align: right;
+  display: block;
+}
+
+footer {
+  border-top: 1px solid #ffbc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer a {
+  margin: 10px 0;
+  color: #ffbc00;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 form {
@@ -305,12 +426,27 @@ form {
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
   margin: 0 auto;
-  border-bottom: 1px solid #ffbc00;
   padding-bottom: 50px;
 }
 
+form input::-webkit-input-placeholder {
+  color: #ffbc00;
+}
+
+form input:-ms-input-placeholder {
+  color: #ffbc00;
+}
+
+form input::-ms-input-placeholder {
+  color: #ffbc00;
+}
+
+form input::placeholder {
+  color: #ffbc00;
+}
+
 form input[type="text"], form input[type="email"], form input[type="textarea"] {
-  background-color: #ffedbd;
+  background-color: #fff7ec;
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -330,6 +466,7 @@ form input[type="submit"] {
   padding: 10px;
   text-transform: uppercase;
   color: white;
+  letter-spacing: 0.5px;
 }
 
 .half {
@@ -351,6 +488,11 @@ form input[type="submit"] {
 }
 
 @media only screen and (max-width: 950px) {
+  .offer1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
+  }
   .logo {
     width: 300px;
     -webkit-box-flex: unset;
@@ -390,6 +532,20 @@ form input[type="submit"] {
     display: block;
     margin-bottom: 5px;
     background-color: #ffbc00;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .offer1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider {
+    height: 366px;
   }
 }
 

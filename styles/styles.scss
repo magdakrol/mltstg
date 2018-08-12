@@ -8,7 +8,9 @@ $ebold: 900;
 
 $orange:  #ffbc00;
 $dark: #383838;
-
+#o-nas, #news, #oferta, #galeria, #scena, #kontakt {
+    margin: 150px 0;
+}
 .wrapper {
     margin: 0 auto;
     max-width: 1300px;
@@ -16,6 +18,7 @@ $dark: #383838;
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    position: relative;
 }
 
 .clear {
@@ -151,15 +154,18 @@ section {
     .about-text {
         flex: 0 0 100%;
         justify-content: space-around;
+        margin: 0px 0 100px;
         p{
             flex: 0 0 40%;
         }
     }
 
 }
-
+.about-gallery {
+    overflow: hidden;
+}
 .images{
-  
+    position: fixed;
     margin: 85px 0;
     font-size: 0;
     display: -ms-flexbox;
@@ -182,63 +188,66 @@ section {
         }
     }
 } 
-.offer {
-  
-        justify-content: space-evenly;
-        width: 78%;
-        margin: 0 auto;
+
+
+
+.offer-button:hover {
+    height: 180px;
+    transition: height 0.15s ease-out;
+}
+.offer-button{
+    height: 48px;
+    transition: height 0.15s ease-out;
+    position: absolute;
+    width: 90%;
+ bottom:0; right: 0; left: 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding:15px;
+    
+    
+    background-color: rgba(255,188,0, 0.9);
+
+
+    a{
+        color:white;
+        text-align: right;
+        display: block;
         
+    }
+
+    h3{
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    span {
+        border-top: 1px solid white;
+        color: white;
+        padding-top: 3px;
+        padding: 10px;
+    }
+    
+    
 }
 
-.offer-button::after{
-    font-weight: 300;
-    content:attr(data-text);
-    position: absolute;
-    overflow: hidden;
-    background-color: $orange;
-    opacity: 0.4;
-    transition: 0.5s;
-    color: #F9EAC7;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    letter-spacing: 1.2px;
-    padding: 15px;
-    opacity: 0;
-    
-   margin-left: auto;
-   margin-right: auto;
+
+.offer {
+        justify-content: space-evenly;
+        width: 78%;
+        margin: 0 auto;    
 }
-.offer-button:hover::after {
-    opacity: 1;
-}
+
 .offer1 {
     flex: 0 0 47%;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     display: block;
 }
 
-.offer-button {
-    position: absolute;
-    text-align: center;
-  
-    bottom: 100px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-   margin-right: auto; 
-    a{
-        background-color: $orange;
-        box-sizing: border-box;
-        padding: 15px 10px;
-        position: relative;
-        text-transform: uppercase;
-        
-        
-    }
-}
 
 .jumbo {
     border-top: 1px solid $orange;
@@ -263,29 +272,122 @@ section {
         font-weight: $light;
         padding-bottom: 30px;
     }
-    span {
+    p {
         padding:25px 0 10px;
         font-weight: 300;
         font-size: 22px;
+        width: 100%;
     }
-    p{
+    span{
         text-transform: uppercase;
         color:#9a9a9a;
         font-weight: 500;
         font-size: 25px;
     }
 }
+
+
+.main-article {
+    width: 100%;
+    position: absolute;
+    bottom: -85px;
+    background-color: rgba(255,188,0, 0.9);
+    box-sizing: border-box;
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        text-transform: uppercase;
+        color:white;
+        font-size: 25px;
+        font-weight: $light;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+    }
+    p {
+        color: white;
+        font-size: 16px;
+        padding-top: 20px;
+        border-top: 1px white solid;
+        font-weight: $light;
+        letter-spacing: 0.5px;
+    }
+    a{
+        align-self: flex-end;
+        margin-top:5px;
+    }
+
+}
+
+.slider {
+    margin-top: 125px;
+    height: 350px
+}
+.slick-slide {
+    width: 500px;
+}
+div.slick-list.draggable {
+    height: 100%;
+}
+.article {
+    width: 350px;
+    margin: 0 20px;
+    position: relative;
+
+    .article-content{
+        background-color: rgba(255,188,0, 0.8);
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: auto;
+        top: 188px;
+        left: 0; right: 0;
+        height:auto;
+        h4 {
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 16px;
+        }
+       p{
+        padding: 15px 5px;
+       }
+       a{
+           text-align: right;
+           display:block;
+       }
+    }
+}
 #kontakt {
     
 
 }
+
+footer {
+    border-top: 1px solid $orange;
+    display: flex;
+    justify-content: flex-end;
+    a{
+        margin: 10px 0;
+        color: $orange;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
 form {
     flex: 0 0 70%;
     margin: 0 auto;
-    border-bottom: 1px solid $orange;
+    
     padding-bottom: 50px;
+    input::placeholder {
+        color: $orange;
+    }
     input[type="text"], input[type="email"], input[type="textarea"] {
-        background-color: #ffedbd;
+        background-color: #fff7ec;
+        
         border:none;
         box-sizing: border-box;
         margin: 20px 0;
@@ -303,6 +405,7 @@ form {
         padding: 10px;
         text-transform: uppercase;
         color: white;
+        letter-spacing: 0.5px;
 
     }
 }
@@ -321,11 +424,15 @@ form {
   
 }
 @media only screen and (max-width: 950px) {
-
+    .offer1 {
+        flex: 0 0 70%;
+    }
 .logo {
     width: 300px;
     flex: unset;
 }
+
+
 .menu {
     display: none;
 }
@@ -365,7 +472,17 @@ margin-bottom:5px;
 background-color: $orange;
 }
 }
+@media only screen and (max-width: 650px) {
+.offer1 {
+    flex: 0 0 100%;
+}
+}
 
+@media only screen and (max-width: 600px) {
+    .slider {
+        height: 366px;
+    }
+}
 @media only screen and (max-width: 400px) {
     #menuicon {
         right: 50%;

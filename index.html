@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multistage - Studio Edukacji Muzycznej </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./styles/reset.css">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
@@ -73,17 +75,29 @@
         </div>
         </div>
         <div class="about-gallery">
-            <div class="images ">
-                <div class="image"><img src="./assets/o1.jpg" /></div>
-                <div class="image"><img src="./assets/o2.jpg" /></div>
-                <div class="image"><img src="./assets/o1.jpg" /></div>
-                <div class="image"><img src="./assets/o2.jpg" /></div>
-                <div class="image"><img src="./assets/o3.jpg" /></div>
-                
-                <div class="image"><img src="./assets/o4.jpg" /></div>
-               
-
-            </div>
+                <div class="variable-width">
+                        <div class="">
+                            <img src="./assets/g1.jpg" />
+                        </div>
+                        <div class="">
+                                <img src="./assets/g2.jpg" />
+                            </div>
+                            <div class="">
+                                    <img src="./assets/g3.jpg" />
+                                </div>
+                                <div class="">
+                                        <img src="./assets/g4.jpg" />
+                                    </div>
+                                    <div class="">
+                                            <img src="./assets/g5.jpg" />
+                                        </div>
+                                        <div class="">
+                                                <img src="./assets/g6.jpg" />
+                                            </div>
+                                            <div class="">
+                                                    <img src="./assets/g7.jpg" />
+                                                </div>
+                    </div>
         </div>
     </section>
     <section id="oferta">
@@ -95,35 +109,51 @@
                     </div>
                     <div class="offer flexbox">
                         <div class="offer1">
-                            <img src="assets/of3.jpg" />
+                            <img src="assets/of1.jpg" />
                             <div class="offer-button" data-text="tekst tekst">
-                                <a href="#">Lekcje muzyki</a>
-                            </div>
+                                    <h3>Muzyczne urodziny</h3>
+                                    <span class="rect__blurb">Vivamus tellus nibh, euismod sed auctor id, dapibus id nisl. Nam pellentesque sapien quis iaculis gravida. Suspendisse malesuada elit quam, sagittis tempor nisl lobortis vitae.</span>
+                                            <a href="#">link</a>
+                                </div>
                         </div>
                         
                         <div class="offer1">
-                                <img src="assets/of3.jpg" />
+                                <img src="assets/of2.jpg" />
                                 <div class="offer-button" data-text="tekst tekst">
-                                    <a href="#">Muzyczne</a>
-                                </div>
+                                        <h3>Imprezy okolicznościowe</h3>
+                                        <span class="rect__blurb">Vivamus tellus nibh, euismod sed auctor id, dapibus id nisl. Nam pellentesque sapien quis iaculis gravida. Suspendisse malesuada elit quam, sagittis tempor nisl lobortis vitae.</span>
+                                            <a href="#">link</a>
+                                    </div>
                             </div>
                             <div class="offer1">
                                     <img src="assets/of3.jpg" />
                                     <div class="offer-button" data-text="tekst tekst">
-                                        <a href="#">Link</a>
-                                    </div>
+                                            <h3>Wynajem</h3>
+                                            <span class="rect__blurb">Vivamus tellus nibh, euismod sed auctor id, dapibus id nisl. Nam pellentesque sapien quis iaculis gravida. Suspendisse malesuada elit quam, sagittis tempor nisl lobortis vitae.</span>
+                                            <a href="#">link</a>
+                                        </div>
                                 </div>
                                 <div class="offer1">
-                                        <img src="assets/of3.jpg" />
+                                        <img src="assets/of4.jpg" />
                                         <div class="offer-button" data-text="tekst tekst">
-                                                <a href="#">Link</a>
-                                            </div>
+                                            <h3>Lekcje muzyki</h3>
+                                            <span class="rect__blurb">Vivamus tellus nibh, euismod sed auctor id, dapibus id nisl. Nam pellentesque sapien quis iaculis gravida. Suspendisse malesuada elit quam, sagittis tempor nisl lobortis vitae. </span>
+                                            <a href="#">link</a>
+                                        </div>
                                     </div>
                     </div>
 
         </div>
     </section>
-    <section id="">
+    <section class="jumbo">
+            <div class="wrapper flexbox">
+                <h3>Pytania?? ?</h3>
+                <div class="title-line"></div>
+                <p>Tekst tekst</p>
+                <span>tekst tekst</span>
+            </div>
+        </section>
+    <section id="news">
         <div class="wrapper flexbox">
                         <div class="section-title">
                                 <h2>Aktualności</h2>
@@ -135,20 +165,134 @@
             <img src="./assets/para1.jpg" />
         </div>
         <div class="wrapper">
-            <div class="news flexbox">
-                <div class="article">
-                    <img >
-                    
-                </div>
-            </div>
+        <div class ="main-article wrapper">
+            <h3>Title</h3>
+            <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ex sit amet risus feugiat placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam neque mauris, luctus non quam eget, gravida lacinia quam. Integer dui dui, hendrerit et lorem non, bibendum euismod erat. Sed eget lacus vitae nisl volutpat sodales. Cras rhoncus est nec risus rutrum luctus quis non est.</p>
+            <a href="#">czytaj więcej ></a>
         </div>
+    </div>
+        <div class="wrapper">
+            
+               
+                <div class="multipe-items slider">
+                        <div class="article">
+                                
+                                <img src="./assets/ak1.jpg">
+                                <div class="article-content">
+                                <h4>title</h4>
+                                <p>
+                                        Fusce nec porttitor risus. Integer eget vehicula nibh. Nulla feugiat massa vel leo rhoncus scelerisque. 
+                                </p>
+                                <a href="#">czytaj więcej ></a>
+                            </div>
+                            </div>
+                            <div class="article">
+                                    
+                                    <img src="./assets/ak2.jpg">
+                                    <div class="article-content">
+                                            <h4>title</h4>
+                                            <p>Duis placerat, dui sed malesuada sodales, dolor elit eleifend sapien, nec mattis dui enim imperdiet justo. Donec dolor neque, ornare nec tortor vel, pulvinar mollis mi.</p>
+                                            <a href="#">czytaj więcej ></a>
+                                        </div>
+                                </div>
+                                <div class="article">
+                                        
+                                        <img src="./assets/ak3.jpg">
+                                        <div class="article-content">
+                                                <h4>title</h4>
+                                                <p>Lorem ipsum dolor sit amet, mel ne ferri modus feugiat, ut purto erat maluisset vim.</p>
+                                                <a href="#">czytaj więcej ></a>
+                                            </div>
+                                    </div>
+                                    <div class="article">
+                                            
+                                            <img src="./assets/ak4.jpg">
+                                            <div class="article-content">
+                                                    <h4>title</h4>
+                                                    <p>Lorem ipsum dolor sit amet, mel ne ferri modus feugiat, ut purto erat maluisset vim.</p>
+                                                    <a href="#">czytaj więcej ></a>
+                                                </div>
+                                        </div>
+                </div>
+        </div>
+     
     </section>
+    <section id="gallery">
+            <div class="wrapper flexbox">
+                <div class="section-title">
+                <h2>Galeria</h2>
+                <span class="title-line"></span>
+                <span class="section-caption">Tekst tekst tekst</span>
+            </div>
+            </div>
+          
+            <div class="variable-width">
+                <div class="">
+                    <img src="./assets/g1.jpg" />
+                </div>
+                <div class="">
+                        <img src="./assets/g2.jpg" />
+                    </div>
+                    <div class="">
+                            <img src="./assets/g3.jpg" />
+                        </div>
+                        <div class="">
+                                <img src="./assets/g4.jpg" />
+                            </div>
+                            <div class="">
+                                    <img src="./assets/g5.jpg" />
+                                </div>
+                                <div class="">
+                                        <img src="./assets/g6.jpg" />
+                                    </div>
+                                    <div class="">
+                                            <img src="./assets/g7.jpg" />
+                                        </div>
+            </div>
+
+        </section>
+
+        <section id="scena">
+                <div class="wrapper flexbox">
+                    <div class="section-title">
+                    <h2>Scena</h2>
+                    <span class="title-line"></span>
+                    <span class="section-caption">Tekst tekst tekst</span>
+                </div>
+                </div>
+              
+                <div class="variable-width">
+                    <div class="">
+                        <img src="./assets/g1.jpg" />
+                    </div>
+                    <div class="">
+                            <img src="./assets/g2.jpg" />
+                        </div>
+                        <div class="">
+                                <img src="./assets/g3.jpg" />
+                            </div>
+                            <div class="">
+                                    <img src="./assets/g4.jpg" />
+                                </div>
+                                <div class="">
+                                        <img src="./assets/g5.jpg" />
+                                    </div>
+                                    <div class="">
+                                            <img src="./assets/g6.jpg" />
+                                        </div>
+                                        <div class="">
+                                                <img src="./assets/g7.jpg" />
+                                            </div>
+                </div>
+    
+            </section>
     <section class="jumbo">
         <div class="wrapper flexbox">
             <h3>Pytania?? ?</h3>
             <div class="title-line"></div>
-            <span>Tekst tekst</span>
-            <p>tekst tekst</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu ex sit amet risus feugiat placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <span>tekst tekst</span>
         </div>
     </section>
     <section id="kontakt">
@@ -169,6 +313,12 @@
                                 
             </div>
         </section>
-   
+        <footer class="wrapper">
+            <a href="#">DesignCreative C</a>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script src="scripts/main.js"></script>
+
 </body>
 </html>
