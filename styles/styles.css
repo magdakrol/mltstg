@@ -1,4 +1,9 @@
-#o-nas, #news, #oferta, #galeria, #scena, #kontakt {
+#o-nas,
+#news,
+#oferta,
+#galeria,
+#scena,
+#kontakt {
   margin: 150px 0;
 }
 
@@ -36,6 +41,7 @@ p {
   color: #383838;
   font-weight: 300i;
   font-style: italic;
+  font-size: 18px;
   display: block;
   padding: 25px 0 50px;
 }
@@ -155,7 +161,7 @@ section {
   margin: 100px 0;
 }
 
-#o-nas .about-text {
+.about-text {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -164,7 +170,7 @@ section {
   margin: 0px 0 100px;
 }
 
-#o-nas .about-text p {
+.about-text p {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
@@ -311,10 +317,16 @@ section {
   font-size: 25px;
 }
 
+.asrtices {
+  margin-bottom: 50px;
+}
+
 .main-article {
   width: 100%;
   position: absolute;
   bottom: -85px;
+  left: 0;
+  right: 0;
   background-color: rgba(255, 188, 0, 0.9);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -350,6 +362,24 @@ section {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: 5px;
+}
+
+#news .section-title {
+  position: absolute;
+  top: 50px;
+}
+
+#news .section-title h2 {
+  color: white;
+  font-weight: 700;
+}
+
+#news .section-title .section-caption {
+  color: white;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 130px;
 }
 
 .slider {
@@ -445,7 +475,9 @@ form input::placeholder {
   color: #ffbc00;
 }
 
-form input[type="text"], form input[type="email"], form input[type="textarea"] {
+form input[type="text"],
+form input[type="email"],
+form input[type="textarea"] {
   background-color: #fff7ec;
   border: none;
   -webkit-box-sizing: border-box;
@@ -499,6 +531,9 @@ form input[type="submit"] {
         -ms-flex: unset;
             flex: unset;
   }
+  .section-title {
+    margin-left: 70px;
+  }
   .menu {
     display: none;
   }
@@ -541,6 +576,12 @@ form input[type="submit"] {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
+  .about-text p {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -549,7 +590,7 @@ form input[type="submit"] {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width: 400px) {
   #menuicon {
     right: 50%;
     top: 100px;

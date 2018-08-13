@@ -1,16 +1,20 @@
-
 // font styles
 $itlight: 300i;
 $light: 300;
 $regular: 400;
 $bold: 700;
 $ebold: 900;
-
-$orange:  #ffbc00;
+$orange : #ffbc00;
 $dark: #383838;
-#o-nas, #news, #oferta, #galeria, #scena, #kontakt {
+#o-nas,
+#news,
+#oferta,
+#galeria,
+#scena,
+#kontakt {
     margin: 150px 0;
 }
+
 .wrapper {
     margin: 0 auto;
     max-width: 1300px;
@@ -37,7 +41,7 @@ h2 {
 }
 
 p {
-    color:$dark;
+    color: $dark;
     letter-spacing: 0.4px;
 }
 
@@ -45,24 +49,23 @@ p {
     color: $dark;
     font-weight: $itlight;
     font-style: italic;
+    font-size: 18px;
     display: block;
     padding: 25px 0 50px;
 }
+
 .section-title {
     margin-left: 200px;
     width: 100%;
 }
 
-.title-line{
-    display:block;
+.title-line {
+    display: block;
     border-top: 8px solid $orange;
     color: $orange;
-    margin-top:15px;
+    margin-top: 15px;
     width: 50px;
 }
-
-
-
 
 .hidden {
     display: none;
@@ -86,18 +89,15 @@ nav {
         text-transform: unset;
         padding: unset;
     }
-
     a {
         color: $dark;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: $light;
     }
-
     a:hover {
         color: $orange;
         transition: ease-in-out 0.3s;
-     
     }
 }
 
@@ -106,13 +106,13 @@ nav {
     margin-top: 15px;
 }
 
-
 .logo {
-flex: 0 0 20%;
+    flex: 0 0 20%;
     img {
-        width:100%;
+        width: 100%;
     }
 }
+
 #banner {
     margin: unset;
     h1 {
@@ -123,122 +123,109 @@ flex: 0 0 20%;
     .background-image {
         margin: 25px 0 0;
     }
-
     .banner-content {
         margin: auto;
         position: absolute;
-        left: 0; bottom: 150px; right: 0;
-
+        left: 0;
+        bottom: 150px;
+        right: 0;
         color: white;
         text-align: center;
     }
-
     .contact {
         flex: 0 0 100%;
         color: $orange;
         font-size: 23px;
     }
-    }
+}
 
 .white-line {
     height: 1px;
     width: 100%;
     color: white;
 }
+
 section {
     margin: 100px 0;
 }
-#o-nas {
-  
 
-    .about-text {
-        flex: 0 0 100%;
-        justify-content: space-around;
-        margin: 0px 0 100px;
-        p{
-            flex: 0 0 40%;
-        }
+.about-text {
+    flex: 0 0 100%;
+    justify-content: space-around;
+    margin: 0px 0 100px;
+    p {
+        flex: 0 0 40%;
     }
-
 }
+
 .about-gallery {
     overflow: hidden;
 }
-.images{
+
+.images {
     position: fixed;
     margin: 85px 0;
     font-size: 0;
     display: -ms-flexbox;
     -ms-flex-wrap: wrap;
     -ms-flex-direction: column;
-    -webkit-flex-flow: row wrap; 
-    flex-flow: row wrap; 
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
     display: -webkit-box;
     display: flex;
-  
     .image {
         -webkit-box-flex: auto;
         -ms-flex: auto;
-        flex: auto; 
-        width: 200px; 
-     
+        flex: auto;
+        width: 200px;
         img {
-            width: 100%; 
-            height: auto; 
+            width: 100%;
+            height: auto;
         }
     }
-} 
-
-
+}
 
 .offer-button:hover {
     height: 180px;
     transition: height 0.15s ease-out;
 }
-.offer-button{
+
+.offer-button {
     height: 48px;
     transition: height 0.15s ease-out;
     position: absolute;
     width: 90%;
- bottom:0; right: 0; left: 20px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  padding:15px;
-    
-    
-    background-color: rgba(255,188,0, 0.9);
-
-
-    a{
-        color:white;
+    bottom: 0;
+    right: 0;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: rgba(255, 188, 0, 0.9);
+    a {
+        color: white;
         text-align: right;
         display: block;
-        
     }
-
-    h3{
+    h3 {
         color: white;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 10px;
     }
-
     span {
         border-top: 1px solid white;
         color: white;
         padding-top: 3px;
         padding: 10px;
     }
-    
-    
 }
 
-
 .offer {
-        justify-content: space-evenly;
-        width: 78%;
-        margin: 0 auto;    
+    justify-content: space-evenly;
+    width: 78%;
+    margin: 0 auto;
 }
 
 .offer1 {
@@ -248,23 +235,19 @@ section {
     display: block;
 }
 
-
 .jumbo {
     border-top: 1px solid $orange;
     border-bottom: 1px solid $orange;
     width: 80%;
     margin: 100px auto;
     padding: 50px 0;
-    color:#9a9a9a;
-
+    color: #9a9a9a;
     text-align: center;
     .flexbox {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
     }
-
     h3 {
         color: $orange;
         font-size: 35px;
@@ -273,32 +256,36 @@ section {
         padding-bottom: 30px;
     }
     p {
-        padding:25px 0 10px;
+        padding: 25px 0 10px;
         font-weight: 300;
         font-size: 22px;
         width: 100%;
     }
-    span{
+    span {
         text-transform: uppercase;
-        color:#9a9a9a;
+        color: #9a9a9a;
         font-weight: 500;
         font-size: 25px;
     }
 }
 
-
+.background-banner {}
+.asrtices {
+    margin-bottom: 50px;
+}
 .main-article {
     width: 100%;
     position: absolute;
     bottom: -85px;
-    background-color: rgba(255,188,0, 0.9);
+    left:0; right: 0;
+    background-color: rgba(255, 188, 0, 0.9);
     box-sizing: border-box;
     padding: 20px 35px;
     display: flex;
     flex-direction: column;
     h3 {
         text-transform: uppercase;
-        color:white;
+        color: white;
         font-size: 25px;
         font-weight: $light;
         margin-bottom: 20px;
@@ -312,30 +299,47 @@ section {
         font-weight: $light;
         letter-spacing: 0.5px;
     }
-    a{
+    a {
         align-self: flex-end;
-        margin-top:5px;
+        margin-top: 5px;
     }
+}
 
+#news .section-title {
+    position: absolute;
+    top: 50px;
+    h2 {
+        color: white;
+        font-weight: $bold;
+    }
+    .section-caption {
+        color: white;
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 130px;
 }
 
 .slider {
     margin-top: 125px;
     height: 350px
 }
+
 .slick-slide {
     width: 500px;
 }
+
 div.slick-list.draggable {
     height: 100%;
 }
+
 .article {
     width: 350px;
     margin: 0 20px;
     position: relative;
-
-    .article-content{
-        background-color: rgba(255,188,0, 0.8);
+    .article-content {
+        background-color: rgba(255, 188, 0, 0.8);
         width: 90%;
         margin: 0 auto;
         padding: 10px;
@@ -343,33 +347,32 @@ div.slick-list.draggable {
         position: absolute;
         bottom: auto;
         top: 188px;
-        left: 0; right: 0;
-        height:auto;
+        left: 0;
+        right: 0;
+        height: auto;
         h4 {
             color: white;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             font-size: 16px;
         }
-       p{
-        padding: 15px 5px;
-       }
-       a{
-           text-align: right;
-           display:block;
-       }
+        p {
+            padding: 15px 5px;
+        }
+        a {
+            text-align: right;
+            display: block;
+        }
     }
 }
-#kontakt {
-    
 
-}
+#kontakt {}
 
 footer {
     border-top: 1px solid $orange;
     display: flex;
     justify-content: flex-end;
-    a{
+    a {
         margin: 10px 0;
         color: $orange;
         &:hover {
@@ -377,18 +380,19 @@ footer {
         }
     }
 }
+
 form {
     flex: 0 0 70%;
     margin: 0 auto;
-    
     padding-bottom: 50px;
     input::placeholder {
         color: $orange;
     }
-    input[type="text"], input[type="email"], input[type="textarea"] {
+    input[type="text"],
+    input[type="email"],
+    input[type="textarea"] {
         background-color: #fff7ec;
-        
-        border:none;
+        border: none;
         box-sizing: border-box;
         margin: 20px 0;
         border-bottom: 1px $orange solid;
@@ -396,9 +400,8 @@ form {
         text-transform: uppercase;
         color: $orange;
         font-weight: 300;
-
     }
-    input[type="submit"]{
+    input[type="submit"] {
         background: $orange;
         border: none;
         box-sizing: border-box;
@@ -406,12 +409,13 @@ form {
         text-transform: uppercase;
         color: white;
         letter-spacing: 0.5px;
-
     }
 }
+
 .half {
     flex: 0 0 48%;
 }
+
 .full {
     flex: 0 0 100%;
 }
@@ -420,62 +424,68 @@ form {
     .wrapper {
         width: 95%;
     }
-
-  
 }
+
 @media only screen and (max-width: 950px) {
     .offer1 {
         flex: 0 0 70%;
     }
-.logo {
-    width: 300px;
-    flex: unset;
+    .logo {
+        width: 300px;
+        flex: unset;
+    }
+    .section-title {
+        margin-left: 70px;
+    }
+    .menu {
+        display: none;
+    }
+    .background-open {
+        display: block;
+    }
+    .open {
+        display: block;
+        position: absolute;
+        top: 115px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    nav {
+        text-align: center;
+        margin-top: 7px;
+    }
+    #menuicon {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        top: 29px;
+        cursor: pointer;
+    }
+    #menuicon span {
+        height: 4px;
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+        background-color: $orange;
+    }
 }
+@media only screen and (max-width: 700px) {
 
-
-.menu {
-    display: none;
-}
-.background-open {
-    display: block;
-}
-.open {
-    display: block;
-    position: absolute;
-    top: 115px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    
-}
-
-nav {
-    text-align: center;
-    margin-top: 7px;
-}
-
-#menuicon {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    right: 0;
-    top: 29px;
-    cursor: pointer;
-}
-
-#menuicon span {
-height: 4px;
-width: 100%;
-display: block;
-margin-bottom:5px;
-background-color: $orange;
-}
 }
 @media only screen and (max-width: 650px) {
-.offer1 {
-    flex: 0 0 100%;
-}
+    
+    .offer1 {
+        flex: 0 0 100%;
+    }
+    .about-text {
+        p {
+            flex: 0 0 80%;
+            margin-bottom: 15px;
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -483,7 +493,9 @@ background-color: $orange;
         height: 366px;
     }
 }
-@media only screen and (max-width: 400px) {
+
+@media (max-width: 400px) {
+    
     #menuicon {
         right: 50%;
         top: 100px;
@@ -493,4 +505,5 @@ background-color: $orange;
             margin: 55px 0;
         }
     }
+
 }
